@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+    <!-- <div class="bg-image"></div> -->
+    <form action=" {{url_for('login')}} " method="post">
+        
+            <h1>Log In <br> {{ msg }}</h1>
+            <div class="box">
+                <i class="fa fa-envelope"></i>
+                <input type="text" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="box">
+                <i class="fa fa-key"></i>
+                <input type="text" name="password" id="password" placeholder="Enter Your Password">
+            </div>
+            <input type="submit" class="btn" placeholder="Sign In">
+            <br>
+        <h1>
+            <ul>
+                <l1>
+                    <a href="/register">Register</a>
+                </l1>
+            </ul>
+        </h1>
+    </form>
+    </div>
+</body>
+</html>
